@@ -1,7 +1,10 @@
 export const lightColors = {
   primary100: "hsl(260, 50%, 50%)",
-  primary200: "hsl(260, 50%, 40%)",
-  primary300: "hsl(260, 50%, 30%)",
+  primary200: "hsl(260, 50%, 46%)",
+  primary300: "hsl(260, 50%, 42%)",
+  secondary100: "hsl(240, 100%, 98%)",
+  secondary200: "hsl(240, 100%, 96%)",
+  secondary300: "hsl(240, 100%, 94%)",
   accent100: "hsl(194, 60%, 50%)",
   accent200: "hsl(194, 60%, 40%)",
   accent300: "hsl(194, 60%, 30%)",
@@ -12,9 +15,13 @@ export const lightColors = {
 } as const;
 
 export const darkColors = {
+  ...lightColors,
   primary100: "hsl(260, 40%, 50%)",
   primary200: "hsl(260, 40%, 40%)",
   primary300: "hsl(260, 40%, 30%)",
+  secondary100: "hsl(240, 25%, 30%)",
+  secondary200: "hsl(240, 25%, 20%)",
+  secondary300: "hsl(240, 25%, 10%)",
   accent100: "hsl(194, 50%, 50%)",
   accent200: "hsl(194, 50%, 40%)",
   accent300: "hsl(194, 50%, 30%)",
