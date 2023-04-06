@@ -1,4 +1,5 @@
-import { Button } from "@acme/ui";
+import { Button, Dialog } from "@acme/ui";
+import { useState } from "react";
 
 type RowProps = {
   children: React.ReactNode;
@@ -19,6 +20,12 @@ const Row = ({ children }: RowProps) => (
 );
 
 export default function Web() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen((s) => !s);
+  };
+
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Stitches</h1>
@@ -44,6 +51,12 @@ export default function Web() {
           Secondary
         </Button>
       </Row>
+      <Button onClick={toggleModal}>Open</Button>
+      <Dialog
+        open={isModalOpen}
+        onOpenChange={setIsModalOpen}
+        content={<div>content here</div>}
+      />
     </div>
   );
 }

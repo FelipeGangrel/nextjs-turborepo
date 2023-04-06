@@ -37,6 +37,6 @@ export const darkColors = {
   accent100: "hsl(194, 50%, 50%)",
   accent200: "hsl(194, 50%, 46%)",
   accent300: "hsl(194, 50%, 32%)",
-  surface100: "hsl(260, 20%, 10%)",
-  surface200: "hsl(260, 20%, 20%)",
+  surface100: "hsl(260, 20%, 20%)",
+  surface200: "hsl(260, 20%, 30%)",
 } as const;
