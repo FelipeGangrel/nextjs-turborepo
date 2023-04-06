@@ -59,9 +59,6 @@ export const StyledButton = styled("button", {
         fontSize: "$xs",
       },
     },
-    outlined: {
-      true: {},
-    },
   },
 
   defaultVariants: {

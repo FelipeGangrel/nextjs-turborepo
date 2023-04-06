@@ -75,7 +75,6 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
   ${(p) => p.variant === "primary" && primaryVariantStyles};
   ${(p) => p.variant === "secondary" && secondaryVariantStyles};
-
   ${(p) => p.size === "lg" && lgSizeStyles};
   ${(p) => p.size === "md" && mdSizeStyles};
   ${(p) => p.size === "sm" && smSizeStyles};
