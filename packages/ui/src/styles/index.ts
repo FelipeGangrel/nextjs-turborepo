@@ -45,3 +45,19 @@ export const darkTheme = createTheme({
     ...darkColors,
   },
 });
+
+export const globalStyles = globalCss({
+  "*": {
+    boxSizing: "border-box",
+    margin: 0,
+    padding: 0,
+  },
+  "html, body": {
+    background: "$background",
+    color: "$text100",
+    fontFamily: "$default",
+    fontSize: "$md",
+    margin: 0,
+    padding: 0,
+  },
+});
