@@ -1,4 +1,4 @@
-import { Button } from "@acme/ui";
+import { Button } from "@acme/ui-sc";
 
 export default function Docs() {
   return (

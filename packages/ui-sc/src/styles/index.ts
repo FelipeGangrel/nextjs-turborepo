@@ -1,0 +1,37 @@
+import {
+  lightColors,
+  darkColors,
+  fontSizes,
+  fontWeights,
+  fonts,
+  lineHeights,
+  radii,
+  space,
+} from "@acme/tokens";
+import { createGlobalStyle } from "styled-components";
+
+export const lightTheme = {
+  fontSizes,
+  fontWeights,
+  fonts,
+  lineHeights,
+  radii,
+  space,
+  colors: {
+    ...lightColors,
+  },
+} as const;
+
+export const darkTheme = {
+  ...lightTheme,
+  colors: {
+    ...darkColors,
+  },
+} as const;
+
+export const GlobalStyles = createGlobalStyle`
+    body, html {
+        background: ${(p) => p.theme.colors.background};
+        color: ${(p) => p.theme.colors.text100};
+    }
+`;
