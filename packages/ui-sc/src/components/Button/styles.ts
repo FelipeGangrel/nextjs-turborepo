@@ -40,16 +40,19 @@ const secondaryVariantStyles = css`
   }
 `;
 
-const smSizeStyles = css`
-  padding: ${(p) => p.theme.space[2]} ${(p) => p.theme.space[3]};
+const lgSizeStyles = css`
+  padding: ${(p) => p.theme.space[3]} ${(p) => p.theme.space[5]};
+  font-size: ${(p) => p.theme.fontSizes.lg};
 `;
 
 const mdSizeStyles = css`
   padding: ${(p) => p.theme.space[2]} ${(p) => p.theme.space[4]};
+  font-size: ${(p) => p.theme.fontSizes.md};
 `;
 
-const lgSizeStyles = css`
-  padding: ${(p) => p.theme.space[3]} ${(p) => p.theme.space[5]};
+const smSizeStyles = css`
+  padding: ${(p) => p.theme.space[2]} ${(p) => p.theme.space[3]};
+  font-size: ${(p) => p.theme.fontSizes.xs};
 `;
 
 export const StyledButton = styled.button<StyledButtonProps>`
@@ -58,9 +61,6 @@ export const StyledButton = styled.button<StyledButtonProps>`
   gap: ${(p) => p.theme.space[2]};
   border-radius: ${(p) => p.theme.radii.sm};
   outline: none;
-  border-style: solid;
-  border-width: 2px;
-  border-color: transparent;
   font-family: ${(p) => p.theme.fonts.default};
   font-size: ${(p) => p.theme.fontSizes.md};
   font-weight: ${(p) => p.theme.fontWeights.medium};
@@ -76,7 +76,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   ${(p) => p.variant === "primary" && primaryVariantStyles};
   ${(p) => p.variant === "secondary" && secondaryVariantStyles};
 
-  ${(p) => p.size === "sm" && smSizeStyles};
-  ${(p) => p.size === "md" && mdSizeStyles};
   ${(p) => p.size === "lg" && lgSizeStyles};
+  ${(p) => p.size === "md" && mdSizeStyles};
+  ${(p) => p.size === "sm" && smSizeStyles};
 `;

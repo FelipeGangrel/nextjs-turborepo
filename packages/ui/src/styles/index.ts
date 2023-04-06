@@ -53,6 +53,7 @@ export const globalStyles = globalCss({
     padding: 0,
   },
   "html, body": {
+    font: "400 16px/1.6 Roboto, sans-serif",
     background: "$background",
     color: "$text100",
     fontFamily: "$default",
