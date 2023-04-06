@@ -2,24 +2,17 @@ import { styled } from "@/styles";
 
 export const StyledButton = styled("button", {
   all: "unset",
-
   display: "flex",
   gap: "$2",
-
   borderRadius: "$sm",
-  boxSizing: "border-box",
-  position: "relative",
-
   outline: "none",
   borderStyle: "solid",
   borderSize: "2px",
   borderColor: "transparent",
-
   fontFamily: "$default",
-  fontSize: "$sm",
+  fontSize: "$md",
   fontWeight: "$medium",
   textAlign: "center",
-
   cursor: "pointer",
 
   "&:disabled": {
@@ -73,38 +66,6 @@ export const StyledButton = styled("button", {
       true: {},
     },
   },
-
-  compoundVariants: [
-    {
-      variant: "primary",
-      outlined: true,
-      css: {
-        color: "$primary300",
-        backgroundColor: "transparent",
-        borderColor: "$primary300",
-        "&:not(:disabled):hover, &:not(:disabled):focus": {
-          backgroundColor: "$primary300",
-          color: "$textLighter",
-        },
-        "&:not(:disabled):active": {
-          backgroundColor: "$primary200",
-          color: "$textLighter",
-        },
-      },
-    },
-    {
-      variant: "secondary",
-      outlined: true,
-      css: {
-        color: "$secondary300",
-        backgroundColor: "transparent",
-        borderColor: "$secondary300",
-        "&:not(:disabled):hover, &:not(:disabled):focus": {
-          color: "$text200",
-        },
-      },
-    },
-  ],
 
   defaultVariants: {
     variant: "primary",
