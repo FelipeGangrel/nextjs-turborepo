@@ -1,19 +1,21 @@
 {
-  "name": "web",
+  "name": "styled-components-app",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@acme/ui": "*",
+    "@acme/ui-sc": "*",
+    "@types/styled-components": "^5.1.26",
     "next": "^13.1.1",
-    "next-themes": "^0.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.9",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "@acme/eslint-config-custom": "*",

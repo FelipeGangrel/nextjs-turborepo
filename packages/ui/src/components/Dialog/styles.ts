@@ -43,14 +43,14 @@ export const DialogTitle = styled(Dialog.Title, {
   margin: 0,
   fontWeight: 500,
   color: "$text200",
-  fontSize: 17,
+  fontSize: "$lg",
 });
 
 export const DialogDescription = styled(Dialog.Description, {
   margin: "$4 0 $8",
   color: "$text100",
-  fontSize: 15,
-  lineHeight: 1.5,
+  fontSize: "$md",
+  lineHeight: "$base",
 });
 
 export const Flex = styled("div", { display: "flex" });
